@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Belajar Fundamental Aplikasi Android - Submission 2</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="find_username">Cari Nama Pengguna</string>
+    <string name="adrian_mulyawan">Adrian Mulyawan</string>
+    <string name="adrianmulyawan">\@%s</string>
+    <string name="location">%s</string>
+    <string name="follower">%s Pengikut</string>
+    <string name="following">%s Mengikuti</string>
+
+    <string name="work">%s</string>
+    <string name="location_detail_user">Lokasi</string>
+    <string name="repository_detail_user">Repositori</string>
+    <string name="repository">%s</string>
+    <string name="work_detail_user">Pekerjaan</string>
+    <string name="change_language">Ganti Bahasa</string>
+    <string name="follower_tabs">Pengikut</string>
+    <string name="following_tabs">Mengikuti</string>
+</resources>

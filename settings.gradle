@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "Belajar Fundamental Aplikasi Android - Submission 2"

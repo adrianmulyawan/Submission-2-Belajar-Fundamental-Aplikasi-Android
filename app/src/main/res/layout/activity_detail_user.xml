@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".DetailUserActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_detailuser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="30dp"
+                android:background="@color/colorWhite"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:id="@+id/linearlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/tv_fullName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:gravity="center"
+                        android:text="@string/adrian_mulyawan"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/tv_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:gravity="center"
+                        android:text="@string/adrianmulyawan"
+                        android:textSize="14sp"/>
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="6dp">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="6dp">
+                            <TextView
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:layout_marginEnd="10dp"
+                                android:text="@string/work_detail_user"
+                                android:drawableStart="@drawable/ic_baseline_business_24"
+                                android:drawablePadding="4dp"/>
+                            <TextView
+                                android:textSize="16sp"
+                                android:id="@+id/tv_work"
+                                android:text="@string/work"/>
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="6dp">
+                            <TextView
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:layout_marginEnd="10dp"
+                                android:text="@string/location_detail_user"
+                                android:drawableStart="@drawable/ic_baseline_location_on_24"
+                                android:drawablePadding="4dp"/>
+                            <TextView
+                                android:textSize="16sp"
+                                android:id="@+id/tv_location"
+                                android:text="@string/location"/>
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="6dp">
+                            <TextView
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:layout_marginEnd="10dp"
+                                android:text="@string/repository_detail_user"
+                                android:drawableStart="@drawable/ic_baseline_insert_drive_file_24"
+                                android:drawablePadding="4dp"/>
+                            <TextView
+                                android:textSize="16sp"
+                                android:id="@+id/tv_repository"
+                                android:text="@string/repository"/>
+                        </TableRow>
+                    </TableLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/tv_followers"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/follower"
+                            android:textColor="@color/colorBlack"
+                            android:layout_marginRight="30dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_following"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/following"
+                            android:textColor="@color/colorBlack"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ci_avatar"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_centerHorizontal="true"
+                android:src="@color/colorBlack"
+                app:civ_border_color="@color/colorWhite"
+                app:civ_border_width="1dp" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cv_detailuser"
+                android:background="@color/colorWhite"
+                android:minHeight="?actionBarSize"
+                app:tabTextColor="@color/colorBlack"
+                app:tabIndicatorFullWidth="false"
+                app:tabIndicatorHeight="2dp"
+                app:tabRippleColor="@null"/>
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/tabs"/>
+        </RelativeLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

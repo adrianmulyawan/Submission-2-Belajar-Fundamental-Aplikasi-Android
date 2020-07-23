@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Belajar Fundamental Aplikasi Android - Submission 2</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="find_username">Find Username</string>
+    <string name="adrian_mulyawan">Adrian Mulyawan</string>
+    <string name="adrianmulyawan">\@%s</string>
+    <string name="location">%s</string>
+    <string name="follower">%s Followers</string>
+    <string name="following">%s Following</string>
+
+    <string name="work">%s</string>
+    <string name="location_detail_user">Location</string>
+    <string name="repository_detail_user">Repository</string>
+    <string name="repository">%s</string>
+    <string name="work_detail_user">Work</string>
+    <string name="change_language">Change Language</string>
+    <string name="follower_tabs">Followers</string>
+    <string name="following_tabs">Following</string>
+</resources>
